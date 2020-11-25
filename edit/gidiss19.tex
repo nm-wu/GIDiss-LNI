@@ -11,13 +11,14 @@
 \usepackage{changepage} %for changing topmargin on first page
 % \usepackage{utf}
 \usepackage{pdfpages}
-\usepackage[pdftex,colorlinks=true,linkcolor=black,pdftitle="Ausgezeichnete Dissertationen 2018",pdfauthor="kile",pdfcreator="pdflatex",bookmarks=false]{hyperref}
+\usepackage[pdftex,colorlinks=true,linkcolor=black,pdftitle="Ausgezeichnete Dissertationen 2019",pdfauthor="kile",pdfcreator="pdflatex",bookmarks=false]{hyperref}
 
 %    \usepackage[cam,height=25cm]{crop} 
 \fancypagestyle{fancyfirst}{
 \lhead[\fancyplain{}{}]{\fancyplain{}{}}%
 \rhead[\fancyplain{}{}]{\fancyplain{}{
-\small Steffen  H{\"o}lldobler et. al. (Hrsg.): Ausgezeichnete Informatikdissertationen 2018, \linebreak Lecture Notes in Informatics (LNI), Gesellschaft f{\"u}r Informatik, Bonn 2019 \hspace{5pt} \thepage \hspace{0.05cm}
+\small Steffen  H{\"o}lldobler et. al. (Hrsg.): Ausgezeichnete
+Informatikdissertationen 2019, \linebreak Lecture Notes in Informatics (LNI), Gesellschaft f{\"u}r Informatik, Bonn 2020 \hspace{5pt} \thepage \hspace{0.05cm}
 }}%
 
 
@@ -98,11 +99,6 @@
 \thispagestyle{fancyfirst}
 }
 
-%%%% Vorwort... ist sowieso anders Sat Aug 18 10:43:01 2012
-%%%% 
-%%%% CW: For some reason the some files need the offset while others
-%%%% do not Wed May 25 17:17:02 2012
-%%%% 
 \newcommand{\pdffile}[1]{%
 \includepdf[pages=1-,noautoscale=true,pagecommand={},offset=7pt 42pt]{#1}%
 }
@@ -123,194 +119,94 @@
 \includepdf[pages=1-,noautoscale=true,pagecommand={},offset=0pt -20pt]{#1}%
 }
 
-% %%%% 
-% %%%% CW: alles etwas hoeher, aehnlich wie im Vorwort
-% %%%% Fri Aug 17 09:12:19 2012
-% %%%% 
-% \newcommand{\pdffile}[1]{%
-% \includepdf[pages=1-,noautoscale=true,pagecommand={},offset=5pt 10pt]{#1}%
-% }
-% 
-% \newcommand{\pdffilex}[1]{%
-% \includepdf[pages=1-,noautoscale=true,pagecommand={},offset=0pt 10pt]{#1}%
-% }
-% 
-% \newcommand{\pdffilexlow}[1]{%
-% \includepdf[pages=1-,noautoscale=true,pagecommand={},offset=0pt -8pt]{#1}%
-% }
-
 % ============================================================================
 
 \begin{document}
-% \selectlanguage{deutsch}
-% \selectlanguage{ngerman}
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% {\Large \textbf{Ausgezeichnete Informatikdissertationen 2018}}\\[1ex]
-%  {\Large \textbf{Entwurfsfassung vom 22.5.19}}\\[4ex]
-%  {\Large \textbf{http://www.wv.inf.tu-dresden.de/GIDiss/}}
-% \newpage
-% \ \newpage
-% \ 
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setcounter{page}{3}
 \pagestyle{fancy}
 \lhead[\fancyplain{}{\small\thepage}]{\fancyplain{}}
 \rhead[\fancyplain{}]{\fancyplain{}{\small\thepage}}
 \cfoot{}
-% \vspace*{.5ex}
-
 
 \section*{Vorwort}
 \pdfbookmark[1]{Vorwort}{Vorwort}
 
 \newcommand{\Zitat}[1]{\glqq#1\grqq}
 
-
-Die Gesellschaft f{\"u}r Informatik e.V.\ (GI) vergibt gemeinsam mit der Schweizer
-Informatik Gesellschaft (SI) und der {\"O}sterreichischen Computergesellschaft (OCG) j{\"a}hrlich einen Preis f{\"u}r eine
-hervorragende Dissertation im Bereich der Informatik. Hierzu z{\"a}hlen nicht nur
-Arbeiten, die einen Fortschritt in der Informatik bedeuten, sondern auch
-Arbeiten aus dem Bereich der Anwendungen in anderen Disziplinen und Arbeiten,
-die die Wechselwirkungen zwischen Informatik und Gesellschaft untersuchen. Die
-Auswahl dieser Dissertationen st{\"u}tzt sich auf die von den Universit{\"a}ten und
-Hochschulen f{\"u}r diesen Preis vorgeschlagenen Dissertationen. Jede dieser
-Hochschulen kann jedes Jahr nur eine Dissertation vorschlagen. Somit sind die
+Die Gesellschaft für Informatik e.V.\ (GI) vergibt gemeinsam mit der Schweizer Informatik Gesellschaft (SI) und der Österreichischen Computergesellschaft (OCG) jährlich einen Preis für eine hervorragende Dissertation im Bereich der Informatik. Deutsche, österreichische und schweizer Universitäten und Hochschulen schlagen jeweils eine ausgezeichnet bewertete Dissertation vor, die zur Weiterentwicklung im Bereich Informatik und / oder in den Anwendungsgebieten beiträgt oder die Wechselwirkung zwischen Informatik und Gesellschaft untersucht. Somit sind die
 im Auswahlverfahren vorgeschlagenen Kandidatinnen und Kandidaten bereits
-\Zitat{Preistr{\"a}ger} ihrer Hochschule.
+\Zitat{Preisträger} ihrer Hochschule.
 
-Die 27 Einreichungen zum Dissertationspreis 2018 belegen die
-Bedeutung und auch die Bekanntheit des Dissertationspreises. Wie jedes
-Jahr wurden die vorgeschlagenen Arbeiten im Rahmen eines Kolloquiums
-im Leibniz-Zentrum f{\"u}r Informatik Schloss Dagstuhl von den Nominierten
-vorgestellt. F{\"u}r die Mitglieder des Nominierungsausschusses war das
-pers{\"o}nliche Zusammentreffen mit den Nominierten der H{\"o}hepunkt der
-Auswahlarbeit, und f{\"u}r die Nominierten hat das Kolloquium sicher eine
-Reihe neuer Erfahrungen und wissenschaftlicher Kontakte geboten. Das
-wissenschaftlich sehr hohe Niveau der Vortr{\"a}ge, die regen Diskussionen
-und die angenehme Atmosph{\"a}re in Schloss Dagstuhl wurde von allen
-Teilnehmerinnen und Teilnehmern des Kolloquiums sehr begr{\"u}{\ss}t.
+Die 25 Einreichungen für das Jahr 2019 belegen die Bedeutung des Dissertationspreises. Leider konnten wir in diesem Jahr aufgrund der Corona-Pandemie das Kolloquium zum Dissertationspreis nicht im Leibniz-Zentrum für Informatik Schloss Dagstuhl durchführen. Vielmehr haben wir online-Vorträge der Nominierten organisiert, die verteilt über mehrere Tage abliefen. Das wissenschaftliche Niveau der Vorträge war sehr hoch, die sich daran anschlie\ss{}enden Diskussionen aber leider doch zeitlich sehr beschränkt. 
 
-Wie in jedem Jahr fiel es dem Nominierungsausschuss sehr schwer, eine Dissertation auszuw{\"a}hlen, die durch den Preis besonders gew{\"u}rdigt wird. Mit
-der Pr{\"a}sentation aller vorgeschlagenen Dissertationen in diesem Band wird die
-Ungerechtigkeit, eine aus mehreren ebenb{\"u}rtigen Dissertationen hervorzuheben,
-etwas ausgeglichen. Dieser Band soll zudem einen Beitrag zum Wissenstransfer
-innerhalb der Informatik und von den Universit{\"a}ten und Hochschulen in die
+Wie in jedem Jahr fiel es dem Nominierungsausschuss sehr schwer, eine Dissertation auszuwählen, die durch den Preis besonders gewürdigt wird. Mit
+der Präsentation aller vorgeschlagenen Arbeiten in diesem Band wird die
+Ungerechtigkeit, eine aus mehreren ebenbürtigen Dissertationen hervorzuheben,
+etwas ausgeglichen. Der Band soll zudem einen Beitrag zum Wissenstransfer
+innerhalb der Informatik und von den Universitäten und Hochschulen in die
 Bereiche Technik, Wirtschaft und Gesellschaft leisten.
 
-Die beteiligten Gesellschaften zeichnen Herrn  Dr.~Yannic Maus f{\"u}r seine Dissertation \Zitat{The Power of Locality: Exploring the Limits of Randomnesss in Distributed Computing} mit dem Dissertationspreis 2018 aus. 
+Die genannten Gesellschaften zeichnen Herrn Dr.~Jakub Tarnawski  für seine Arbeit \Zitat{New Graph Algorithms via Polyhedral Techniques} mit dem Dissertationspreis 2019 aus. \linebreak Dr.~Tarnawski hat zwei herausragende Ergebnisse erzielt: den ersten Approximationsalgorithmus f\"{u}r das asymmetrische Problem des Handlungsreisenden, der polynomielle Laufzeit aufweist und einen Approximationsfaktor garantiert, der unabh\"angig von der Anzahl der Knoten im Graph ist, und einen deterministischen parallelen Algorithmus f\"ur das perfekte Matching. 
+Mit dieser Preisverleihung wird eine herausragende algorithmische Arbeit mit signifikanten methodischen  Innovationen gewürdigt. 
 
 
-Im Zentrum der Arbeit von Herr Maus steht die Frage, warum die Laufzeiten der schnellsten randomisierten Algorithmen in verteilten Systemen exponentiell schneller sind als die der schnellsten deterministische Algorithmen. Er hat dazu neue Klassen und Techniken eingef\"uhrt, die einen signifikanten Fortschritt hin zur Beantwortung der Frage darstellen.
-
-Mit dieser Preisverleihung w{\"u}rdigen die beteiligten Gesellschaften -- die
-Gesellschaft f{\"u}r Informatik e.V.\ (GI), die Schweizer Informatik Gesellschaft
-(SI) und die {\"O}sterreichische Computergesellschaft (OCG) -- eine herausragende theoretische Arbeit, mit deren Hilfe randomisierte Algorithmen in verteilten Systemen deutlich besser verstanden werden.\bigskip
-
-Ein besonderer Dank gilt dem Nominierungsausschuss, der sehr effizient
-und konstruktiv zusammengearbeitet hat. Bei Frau Emmanuelle-Anna Dietz Saldanha
-m{\"o}chte ich mich f{\"u}r die Unterst{\"u}tzung bei der Entgegennahme der
-vorgeschlagenen Dissertationen, f{\"u}r die Organisation des Kolloquiums
-sowie f{\"u}r die Zusammenstellung und Anpassung der Beitr{\"a}ge an das
-Format der GI-Edition Lecture Notes in Informatik (LNI) bedanken. F{\"u}r
-die finanzielle Unterst{\"u}tzung des Nominierungskolloquiums sei den
-beteiligten Gesellschaften gedankt. Die Gastfreundlichkeit und die
-hervorragende Bewirtung in Dagstuhl trugen zum Erfolg des Kolloquiums
-bei, wof{\"u}r ich mich an dieser Stelle ebenfalls herzlich bedanke.
-
-\bigskip
+Ein gro\ss{}er Dank gilt dem Nominierungsausschuss für die sehr
+effiziente und konstruktive Arbeit. Desweiteren möchte ich mich
+besonders bedanken bei Frau Sylvia Wünsch für die Organisation der
+online-Vorträge, Herrn Rüdiger Reischuk für die technischen
+Vorbereitung und Durchführung der Vorträge, Herrn Dr.~Stefan Sobernig
+und Frau Dr.~Lena Reinfelder für die Zusammenstellung des Bandes und
+dem Team der Gesellschaft für Informatik e.V.\ für die technische
+Unterstützung des Auswahlverfahrens.\bigskip
 
 \noindent
-\noindent
-Steffen H{\"o}lldobler\\
-Dresden im August  2019
+Steffen Hölldobler\\
+Dresden im November 2020
 
 \vfill
 
-\centerline{\includegraphics[width=0.85\textwidth]{gidiss18gruppe.jpg}}
+% \centerline{\includegraphics[width=0.85\textwidth]{gidiss18gruppe.jpg}}
 
-% \newpage
-% 
 % % %%
 
 \newpage
 
 % \setcounter{page}{5}
-\section*{Kandidat$^*$innen f\"ur den GI-Dissertationspreis 2018}
+\section*{Kandidat$^*$innen f\"ur den GI-Dissertationspreis 2019}
 
 \setlength{\tabcolsep}{0pt}
 
 \begin{tabular}{l@{\hspace{10pt}}l}
-Dr.-Ing.\ Arriel, Juliana &	Otto-von-Guericke-Universit{\"a}t Magdeburg\\
-Dr.\ Berrang, Pascal &	Universit{\"a}t des Saarlandes\\
-Dr. techn.\ B{\"o}hmer, Kristof & Universit{\"a}t Wien / Fakult{\"a}t f{\"u}r Informatik\\
-Dr. rer. nat.\ Bj{\"o}rkelund, Anders &	Universit{\"a}t Stuttgart\\
-Dr.\ Bloessl, Bastian &	Universit{\"a}t Paderborn\\
-Dr. rer. nat.\ Brachmann, Eric &	Technische Universit{\"a}t Dresden\\
-Dr. rer. nat.\ Buschek, Daniel &	Ludwig-Maximilians-Universit{\"a}t\\
-Dr.\ D{\"u}hrkop, Kai &	Friedrich-Schiller-Universit{\"a}t Jena\\
-Dipl.-Ing. BSc\ Eichlseder, Maria &	Technische Universit{\"a}t Graz\\
-Dr.\ Faessler, Matthias &	Universit{\"a}t Z{\"u}rich\\
-Dr.\ Fr{\"o}mmgen, Alexander &	Technische Universit{\"a}t Darmstadt\\
-Dr. rer. nat.\ Herbst, Nikolas &	Julius-Maximilians-Universit{\"a}t W{\"u}rzburg\\
-Dr. rer. nat.\ Immler, Fabian &	Technische Universit{\"a}t M{\"u}nchen\\
-Dr.-Ing.\ Kr{\"u}ger, Julia &	Universit{\"a}t zu L{\"u}beck\\
-Dr. rer. nat.\ Maus, Yannic &	Albert-Ludwigs-Universit{\"a}t Freiburg\\
-Dr.\ Maystre, Lucas &	EPFL - Ecole Polytechnique Federale de Lausanne\\
-Dr. rer. nat.\ Nicolaescu, Ana &	RWTH Aachen University\\
-Dr.-Ing.\ Pfaff, Florian &	Karlsruher Institut f{\"u}r Technologie\\
-Dr.\ Piatkowski, Nico Philipp &	TU Dortmund\\
-Dr.\ Rehr, Robert &	Universit{\"a}t Hamburg\\
-DI Dr.\ Rigger, Manuel &	Johannes Kepler Universit{\"a}t Linz\\
-Dr. rer. nat.\ Sacha, Dominik &	Universit{\"a}t Konstanz\\
-Dr.\ Schlachter, Uli Christian &	Carl von Ossietzky Universit{\"a}t Oldenburg\\
-Dr.\ Sch{\"u}tt, Kristof &	Technische Universit{\"a}t Berlin\\
-Dr.\ Shirinzadeh, Saeideh &	Universit{\"a}t Bremen\\
-Dr.\ techn.\ Spiel, Katta &	TU Wien\\
-Dr.\ Urbat, Henning &	TU Braunschweig\\
-Dr.\ van der Heijden, Rens &	Universit{\"a}t Ulm\\
-
+& \\
 \end{tabular}
 
 
 %\vspace{8mm} 
 \newpage
-\section*{Mitglieder des Nominierungsausschusses\\ f\"ur den GI-Dissertationspreis 2018}
+\section*{Mitglieder des Nominierungsausschusses\\ f\"ur den GI-Dissertationspreis 2019}
 % ****
 
-\centerline{\includegraphics[width=\textwidth]{gidiss18jury}}
-\vspace{4pt}
-Von links nach rechts:
-\vspace{2pt}
+% \centerline{\includegraphics[width=\textwidth]{gidiss18jury}}
+% \vspace{4pt}
+% Von links nach rechts:
+% \vspace{2pt}
 
 \begin{tabular}{p{6.3cm}l}
-Prof.\ Dr.\ R{\"u}diger Reischuk & Universit{\"a}t zu L{\"u}beck \\
-Prof.\ Dr.-Ing.\ Felix Freiling & Universit{\"a}t Erlangen-N{\"u}rnberg \\
-Prof.\ Dr.\ Bj{\"o}rn Scheuermann &  Humbold-Universit\"at zu Berlin \\
-Prof.\ Dr.\ Abraham Bernstein & Universit\"at Z\"urich\\ 
-Prof.\ Dr.\ Steffen H\"olldobler (Vorsitzender) & Technische Universit\"at Dresden\\
-Prof.\ Dr.\ Gustaf Neumann &   Wirtschaftsuniversit\"at Wien\\
-Prof.\ Dr.\ Hans-Peter Lenhof & Universit{\"a}t des Saarlandes\\
-
+  Prof.\ Dr.\ Steffen H\"olldobler (Vorsitzender) & Technische Universit\"at Dresden\\
+  Prof.\ Dr.\ Sven Apel &  Universit{\"a}t des Saarlandes \\
+  Prof.\ Dr.\ Abraham Bernstein & Universit\"at Z\"urich\\ 
+  Prof.\ Dr.-Ing.\ Felix Freiling & Universit{\"a}t Erlangen-N{\"u}rnberg \\
+  Prof.\ Dr.\ Hans-Peter Lenhof & Universit{\"a}t des Saarlandes\\
+  Prof.\ Dr.\ Gustaf Neumann &   Wirtschaftsuniversit\"at Wien\\
+  Prof.\ Dr.\ R{\"u}diger Reischuk & Universit{\"a}t zu L{\"u}beck \\
+  Prof.\ Dr.\ Kay Uwe R{\"o}mer & TU Graz \\
+  Prof.\ Dr.\ Bj{\"o}rn Scheuermann &  Humbold-Universit\"at zu Berlin \\
+  Prof.\ Dr.\ Nicole Schweikardt & Humbold-Universit\"at zu Berlin\\
+  Prof.\ Dr.\ Myra Spiliopoulou & Otto-von-Guericke-Universit{\"a}t Magdeburg\\
+  Prof.\ Dr.\ Sabine S{\"u}sstrunk & {\'E}cole Polytechnique F{\'e}d{\'e}rale de Lausanne\\
+  Prof.\ Dr.\ Klaus Wehrle & RWTH Aachen \\
 \end{tabular}
-
-
-\vspace{6pt}
-Nicht im Bild:
-\vspace{2pt}
-
-\begin{tabular}{p{6.2cm}l}
-Prof.\ Dr.\ Sven Apel &  Universit{\"a}t des Saarlandes \\
-Prof.\ Dr.\ Paul Molitor & Martin-Luther-Universit{\"a}t Halle-Wittenberg\\
-Prof.\ Dr.\ Nicole Schweikardt & Humbold-Universit\"at zu Berlin\\
-Prof.\ Dr.\ Myra Spiliopoulou & Otto-von-Guericke-Universit{\"a}t Magdeburg\\
-Prof.\ Dr.\ Sabine S{\"u}sstrunk & {\'E}cole Polytechnique F{\'e}d{\'e}rale de Lausanne\\
-Prof.\ Dr.\ Klaus Wehrle & RWTH Aachen \\
-\end{tabular}
-
 
 \newpage
 
@@ -318,9 +214,6 @@ Prof.\ Dr.\ Klaus Wehrle & RWTH Aachen \\
 
 % \enlargethispage{-1\baselineskip}
 
-%%%%
-%%%% CW for 2011: squeeze toc a bit
-%%%% 
 \setlength{\parskip}{0.1cm}
 
 \tableofcontents
@@ -341,220 +234,220 @@ Prof.\ Dr.\ Klaus Wehrle & RWTH Aachen \\
 {Arriel, Juliana}
 {Personalized Recommender Systems for Software Product Line Configurations}
 % {Personalisierte Recommender Systems f{\"u}r Software-Produktlinienkonfigurationen}
-\pdffile{pdfs/invited_paper_11}
+% \pdffile{pdfs/invited_paper_11}
 
 
-\sheader 
-{Quantifying and Mitigating Privacy Risks in Biomedical Data}
-% {Quantifizierung und Schutz der Privatsph{\"a}re in der (Epi-)genetik}
-{Berrang, Pascal}
-{Quantifying and Mitigating Privacy Risks in Biomedical Data}
-% {Quantifizierung und Schutz der Privatsph{\"a}re in der (Epi-)genetik}
-\pdffile{pdfs/invited_paper_3}
+% \sheader 
+% {Quantifying and Mitigating Privacy Risks in Biomedical Data}
+% % {Quantifizierung und Schutz der Privatsph{\"a}re in der (Epi-)genetik}
+% {Berrang, Pascal}
+% {Quantifying and Mitigating Privacy Risks in Biomedical Data}
+% % {Quantifizierung und Schutz der Privatsph{\"a}re in der (Epi-)genetik}
+% \pdffile{pdfs/invited_paper_3}
 
 
-\sheader 
-{Behavior Verification for Business Processes \\ based on Testing and Anomaly Detection} %Testing and Anomaly Detection for Business Processes
-% {Verhaltensverifizierung f{\"u}r Gesch{\"a}ftsprozesse basierend auf Testverfahren und Anomalieerkennung}
-{B{\"o}hmer, Kristof}
-{Behavior Verification for Business Processes based on Testing and Anomaly Detection}
-% {Verhaltensverifizierung f{\"u}r Gesch{\"a}ftsprozesse basierend auf Testverfahren und Anomalieerkennung}
-\pdffile{pdfs/invited_paper_14}
+% \sheader 
+% {Behavior Verification for Business Processes \\ based on Testing and Anomaly Detection} %Testing and Anomaly Detection for Business Processes
+% % {Verhaltensverifizierung f{\"u}r Gesch{\"a}ftsprozesse basierend auf Testverfahren und Anomalieerkennung}
+% {B{\"o}hmer, Kristof}
+% {Behavior Verification for Business Processes based on Testing and Anomaly Detection}
+% % {Verhaltensverifizierung f{\"u}r Gesch{\"a}ftsprozesse basierend auf Testverfahren und Anomalieerkennung}
+% \pdffile{pdfs/invited_paper_14}
 
-\sheader 
-{Online Learning of Latent Linguistic Structure with Approximate Search}
-% {Inkrementelles Lernen latenter linguistischer Strukturen durch approximative Suche}
-{Bj{\"o}rkelund, Anders}
-{Online Learning of Latent Linguistic Structure with Approximate Search}
-% {Inkrementelles Lernen latenter linguistischer Strukturen durch approximative Suche}
-\pdffile{pdfs/invited_paper_20}
-
-
-\sheader 
-{A Physical Layer Experimentation Framework for Automotive WLAN}
-% {Eine Experimentierumgebung zur Studie der physikalischen
-% Schicht einer WLAN-Variante für die Anwendung in
-% Fahrzeugnetzen}
-{Bloessl, Bastian}
-% {Eine Experimentierumgebung zur Studie der physikalischen
-% Schicht einer WLAN-Variante für die Anwendung in
-% Fahrzeugnetzen}
-{A Physical Layer Experimentation Framework for Automotive WLAN}
-\pdffile{pdfs/invited_paper_18}
+% \sheader 
+% {Online Learning of Latent Linguistic Structure with Approximate Search}
+% % {Inkrementelles Lernen latenter linguistischer Strukturen durch approximative Suche}
+% {Bj{\"o}rkelund, Anders}
+% {Online Learning of Latent Linguistic Structure with Approximate Search}
+% % {Inkrementelles Lernen latenter linguistischer Strukturen durch approximative Suche}
+% \pdffile{pdfs/invited_paper_20}
 
 
-\sheader 
-{Learning to Predict Dense Correspondences for 6D Pose Estimation}
-% {6D Posensch{\"a}tzung mit gelernten, dichten
-% Korrespondenzvorhersagen}
-{Brachmann, Eric}
-{Learning to Predict Dense Correspondences for 6D Pose Estimation}
-% {6D Posensch{\"a}tzung mit gelernten, dichten
-% Korrespondenzvorhersagen}
-\pdffile{pdfs/invited_paper_9}
+% \sheader 
+% {A Physical Layer Experimentation Framework for Automotive WLAN}
+% % {Eine Experimentierumgebung zur Studie der physikalischen
+% % Schicht einer WLAN-Variante für die Anwendung in
+% % Fahrzeugnetzen}
+% {Bloessl, Bastian}
+% % {Eine Experimentierumgebung zur Studie der physikalischen
+% % Schicht einer WLAN-Variante für die Anwendung in
+% % Fahrzeugnetzen}
+% {A Physical Layer Experimentation Framework for Automotive WLAN}
+% \pdffile{pdfs/invited_paper_18}
 
 
-\sheader 
-{Behaviour-Aware Mobile Touch Interfaces}
-% {Verhaltenssensitive Nutzerschnittstellen für mobile Ger{\"a}te
-% mit ber{\"u}hrungsempfindlichem Bildschirm}
-{Buschek, Daniel}
-{Behaviour-Aware Mobile Touch Interfaces}
-% {Verhaltenssensitive Nutzerschnittstellen für mobile Ger{\"a}te
-% mit ber{\"u}hrungsempfindlichem Bildschirm}
-\pdffile{pdfs/invited_paper_10}
+% \sheader 
+% {Learning to Predict Dense Correspondences for 6D Pose Estimation}
+% % {6D Posensch{\"a}tzung mit gelernten, dichten
+% % Korrespondenzvorhersagen}
+% {Brachmann, Eric}
+% {Learning to Predict Dense Correspondences for 6D Pose Estimation}
+% % {6D Posensch{\"a}tzung mit gelernten, dichten
+% % Korrespondenzvorhersagen}
+% \pdffile{pdfs/invited_paper_9}
 
 
-\sheader 
-{Computational Methods for Small Molecule Identification}
-% {Die Analyse kleiner Molek{\"u}le mittels Methoden der
-% Kombinatorik und des maschinellen Lernens}
-{D{\"u}hrkop, Kai}
-{Computational Methods for Small Molecule Identification}
-% {Die Analyse kleiner Molek{\"u}le mittels Methoden der
-% Kombinatorik und des maschinellen Lernens}
-\pdffile{pdfs/invited_paper_7}
+% \sheader 
+% {Behaviour-Aware Mobile Touch Interfaces}
+% % {Verhaltenssensitive Nutzerschnittstellen für mobile Ger{\"a}te
+% % mit ber{\"u}hrungsempfindlichem Bildschirm}
+% {Buschek, Daniel}
+% {Behaviour-Aware Mobile Touch Interfaces}
+% % {Verhaltenssensitive Nutzerschnittstellen für mobile Ger{\"a}te
+% % mit ber{\"u}hrungsempfindlichem Bildschirm}
+% \pdffile{pdfs/invited_paper_10}
 
 
-\sheader 
-{Differential Cryptanalysis of Symmetric Primitives}
-{Eichlseder, Maria}
-{Differential Cryptanalysis of Symmetric Primitives}
-\pdffile{pdfs/invited_paper_22}
+% \sheader 
+% {Computational Methods for Small Molecule Identification}
+% % {Die Analyse kleiner Molek{\"u}le mittels Methoden der
+% % Kombinatorik und des maschinellen Lernens}
+% {D{\"u}hrkop, Kai}
+% {Computational Methods for Small Molecule Identification}
+% % {Die Analyse kleiner Molek{\"u}le mittels Methoden der
+% % Kombinatorik und des maschinellen Lernens}
+% \pdffile{pdfs/invited_paper_7}
 
 
-\sheader 
-{Quadrator Control for Accurate Agile Flight}
-{Faessler, Matthias}
-{Quadrator Control for Accurate Agile Flight}
-% \pdffile{pdfs/invited_paper_}
+% \sheader 
+% {Differential Cryptanalysis of Symmetric Primitives}
+% {Eichlseder, Maria}
+% {Differential Cryptanalysis of Symmetric Primitives}
+% \pdffile{pdfs/invited_paper_22}
 
 
-\sheader 
-{Programming Models and Extensive Evaluation Support\\ for MPTCP Scheduling, Adaptation Decisions, and DASH Video Streaming} % zu lang
-{Fr{\"o}mmmgen, Alexander}
-{Programmiermodelle \& Unterstützung f{\"u}r umfassende Evaluationen für Kommunikationssyst}
-\pdffile{pdfs/invited_paper_13}
+% \sheader 
+% {Quadrator Control for Accurate Agile Flight}
+% {Faessler, Matthias}
+% {Quadrator Control for Accurate Agile Flight}
+% % \pdffile{pdfs/invited_paper_}
 
 
-\sheader 
-{Methods and Benchmarks for Auto-Scaling Mechanisms\\ in Elastic Cloud Environments}
-{Herbst, Nikolas}
-{Methods and Benchmarks for Auto-Scaling Mechanisms in Elastic Cloud Environments}
-\pdffile{pdfs/invited_paper_6}
+% \sheader 
+% {Programming Models and Extensive Evaluation Support\\ for MPTCP Scheduling, Adaptation Decisions, and DASH Video Streaming} % zu lang
+% {Fr{\"o}mmmgen, Alexander}
+% {Programmiermodelle \& Unterstützung f{\"u}r umfassende Evaluationen für Kommunikationssyst}
+% \pdffile{pdfs/invited_paper_13}
 
 
-\sheader 
-{A Verified ODE Solver and Smale's 14th Problem}
-{Immler, Fabian}
-{A Verified ODE Solver and Smale's 14th Problem}
-\pdffile{pdfs/invited_paper_24}
+% \sheader 
+% {Methods and Benchmarks for Auto-Scaling Mechanisms\\ in Elastic Cloud Environments}
+% {Herbst, Nikolas}
+% {Methods and Benchmarks for Auto-Scaling Mechanisms in Elastic Cloud Environments}
+% \pdffile{pdfs/invited_paper_6}
 
 
-\sheader 
-{Statistical appearance models based \\on probabilistic correspondences for medical image analysis} % zu lang
-% {Statistische Appearance-Modelle basierend auf probabilistischen Korrespondenzen f{\"u}r die medizinische Bildanalyse}
-{Kr{\"u}ger, Julia}
-{Probabilistische Appearance-Modelle f{\"u}r die medizinische Bildanalyse}
-% {Statistische Appearance-Modelle basierend auf probabilistischen Korrespondenzen f{\"u}r die medizinische Bildanalyse}
-\pdffile{pdfs/invited_paper_26}
+% \sheader 
+% {A Verified ODE Solver and Smale's 14th Problem}
+% {Immler, Fabian}
+% {A Verified ODE Solver and Smale's 14th Problem}
+% \pdffile{pdfs/invited_paper_24}
 
 
-\sheader 
-{The Power of Locality Exploring the Limits \\of Randomness in Distributed Computing}
-{Maus, Yannic}
-{The Power of Locality Exploring the Limits of Randomness in Distributed Computing}
-\pdffile{pdfs/invited_paper_12}
+% \sheader 
+% {Statistical appearance models based \\on probabilistic correspondences for medical image analysis} % zu lang
+% % {Statistische Appearance-Modelle basierend auf probabilistischen Korrespondenzen f{\"u}r die medizinische Bildanalyse}
+% {Kr{\"u}ger, Julia}
+% {Probabilistische Appearance-Modelle f{\"u}r die medizinische Bildanalyse}
+% % {Statistische Appearance-Modelle basierend auf probabilistischen Korrespondenzen f{\"u}r die medizinische Bildanalyse}
+% \pdffile{pdfs/invited_paper_26}
 
 
-\sheader 
-{Efficient Learning from Comparisons}
-{Maystre, Lucas}
-{Efficient Learning from Comparisons}
-\pdffile{pdfs/invited_paper_15}
+% \sheader 
+% {The Power of Locality Exploring the Limits \\of Randomness in Distributed Computing}
+% {Maus, Yannic}
+% {The Power of Locality Exploring the Limits of Randomness in Distributed Computing}
+% \pdffile{pdfs/invited_paper_12}
 
 
-\sheader 
-{Behavior-Based Architecture Conformance Checking}
-{Nicolaescu, Ana}
-{Behavior-Based Architecture Conformance Checking}
-\pdffile{pdfs/invited_paper_17}
+% \sheader 
+% {Efficient Learning from Comparisons}
+% {Maystre, Lucas}
+% {Efficient Learning from Comparisons}
+% \pdffile{pdfs/invited_paper_15}
 
 
-\sheader 
-{Multitarget Tracking Using Orientation Estimation for Optical Belt Sorting}
-{Pfaff, Florian}
-{Multitarget Tracking Using Orientation Estimation for Optical Belt Sorting}
-\pdffile{pdfs/invited_paper_16}
+% \sheader 
+% {Behavior-Based Architecture Conformance Checking}
+% {Nicolaescu, Ana}
+% {Behavior-Based Architecture Conformance Checking}
+% \pdffile{pdfs/invited_paper_17}
 
 
-\sheader 
-{Exponential families on resource-constrained systems}
-{Piatkowski, Nico Philipp}
-{Exponential families on resource-constrained systems}
-\pdffile{pdfs/invited_paper_27}
+% \sheader 
+% {Multitarget Tracking Using Orientation Estimation for Optical Belt Sorting}
+% {Pfaff, Florian}
+% {Multitarget Tracking Using Orientation Estimation for Optical Belt Sorting}
+% \pdffile{pdfs/invited_paper_16}
 
 
-\sheader 
-{Robust Speech Enhancement Using\\ Statistical Signal Processing and Machine-Learning}
-{Rehr, Robert}
-{Robust Speech Enhancement Using Statistical Signal Processing and Machine-Learning}
-\pdffile{pdfs/invited_paper_21}
+% \sheader 
+% {Exponential families on resource-constrained systems}
+% {Piatkowski, Nico Philipp}
+% {Exponential families on resource-constrained systems}
+% \pdffile{pdfs/invited_paper_27}
 
 
-\sheader 
-{Memory-safe Execution of Low-level Languages on a Java Virtual Machine}
-{Rigger, Manuel}
-{Memory-safe Execution of Low-level Languages on a Java Virtual Machine}
-\pdffile{pdfs/invited_paper_8}
+% \sheader 
+% {Robust Speech Enhancement Using\\ Statistical Signal Processing and Machine-Learning}
+% {Rehr, Robert}
+% {Robust Speech Enhancement Using Statistical Signal Processing and Machine-Learning}
+% \pdffile{pdfs/invited_paper_21}
 
 
-\sheader 
-{Knowledge Generation in Visual Analytics: \\Integrating Human and Machine Intelligence for Exploration of Big Data} % zu lang
-{Sacha, Dominik}
-{Wissensbildung in der visuellen Datenanalyse}
-\pdffile{pdfs/invited_paper_2}
+% \sheader 
+% {Memory-safe Execution of Low-level Languages on a Java Virtual Machine}
+% {Rigger, Manuel}
+% {Memory-safe Execution of Low-level Languages on a Java Virtual Machine}
+% \pdffile{pdfs/invited_paper_8}
 
 
-\sheader 
-{Petri Net Synthesis and Modal Specifications}
-{Schlachter, Uli Christian}
-{Petri Net Synthesis and Modal Specifications}
-\pdffile{pdfs/invited_paper_25}
+% \sheader 
+% {Knowledge Generation in Visual Analytics: \\Integrating Human and Machine Intelligence for Exploration of Big Data} % zu lang
+% {Sacha, Dominik}
+% {Wissensbildung in der visuellen Datenanalyse}
+% \pdffile{pdfs/invited_paper_2}
 
 
-\sheader 
-{Learning Representations of Atomistic Systems with Deep Neural Networks}
-{Sch{\"u}tt, Kristof}
-{Learning Representations of Atomistic Systems with Deep Neural Networks}
-\pdffile{pdfs/invited_paper_4}
+% \sheader 
+% {Petri Net Synthesis and Modal Specifications}
+% {Schlachter, Uli Christian}
+% {Petri Net Synthesis and Modal Specifications}
+% \pdffile{pdfs/invited_paper_25}
 
 
-\sheader 
-{Synthesis and Optimization \\for Logic-in-Memory Computing using Memristive Devices}
-{Shirinzadeh, Saeideh}
-{Synthesis and Optimization for Logic-in-Memory Computing using Memristive Devices}
-\pdffile{pdfs/invited_paper_1}
+% \sheader 
+% {Learning Representations of Atomistic Systems with Deep Neural Networks}
+% {Sch{\"u}tt, Kristof}
+% {Learning Representations of Atomistic Systems with Deep Neural Networks}
+% \pdffile{pdfs/invited_paper_4}
 
 
-\sheader 
-{Evaluating Experiences of Autistic Children with Technologies in Co-Design}
-{Spiel, Katta}
-{Evaluating Experiences of Autistic Children with Technologies in Co-Design}
-\pdffile{pdfs/invited_paper_19}
+% \sheader 
+% {Synthesis and Optimization \\for Logic-in-Memory Computing using Memristive Devices}
+% {Shirinzadeh, Saeideh}
+% {Synthesis and Optimization for Logic-in-Memory Computing using Memristive Devices}
+% \pdffile{pdfs/invited_paper_1}
 
 
-\sheader 
-{A Categorical Approach to Algebraic}
-{Urbat, Henning}
-{A Categorical Approach to Algebraic}
-\pdffile{pdfs/invited_paper_23}
+% \sheader 
+% {Evaluating Experiences of Autistic Children with Technologies in Co-Design}
+% {Spiel, Katta}
+% {Evaluating Experiences of Autistic Children with Technologies in Co-Design}
+% \pdffile{pdfs/invited_paper_19}
 
 
-\sheader 
-{Misbehavior Detection in Cooperative Intelligent Transport Systems}
-{van der Heijden, Rens}
-{Misbehavior Detection in Cooperative Intelligent Transport Systems}
-\pdffile{pdfs/invited_paper_5}
+% \sheader 
+% {A Categorical Approach to Algebraic}
+% {Urbat, Henning}
+% {A Categorical Approach to Algebraic}
+% \pdffile{pdfs/invited_paper_23}
+
+
+% \sheader 
+% {Misbehavior Detection in Cooperative Intelligent Transport Systems}
+% {van der Heijden, Rens}
+% {Misbehavior Detection in Cooperative Intelligent Transport Systems}
+% \pdffile{pdfs/invited_paper_5}
 
 \end{document}
