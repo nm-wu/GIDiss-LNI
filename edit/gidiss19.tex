@@ -8,6 +8,7 @@
 % \usepackage[utf]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
+\usepackage{ccicons}
 \usepackage{changepage} %for changing topmargin on first page
 % \usepackage{utf}
 \usepackage{pdfpages}
@@ -100,7 +101,19 @@ Informatikdissertationen 2019, \linebreak Lecture Notes in Informatics (LNI), Ge
 }
 
 \newcommand{\pdffile}[1]{%
-\includepdf[pages=1-,noautoscale=true,pagecommand={},offset=7pt 42pt]{#1}%
+  \includepdf[pages=1-,noautoscale=true,pagecommand={},offset=7pt 42pt]{#1}%
+}
+
+\newlength{\doihoffset}
+\newlength{\doivoffset}
+
+\setlength{\doihoffset}{4.447cm}
+\setlength{\doivoffset}{4.84cm}
+
+
+\newcommand{\pdffilecc}[1]{%
+  \includepdf[pages=1,noautoscale=true,pagecommand={\AddToShipoutPictureBG*{\put(\LenToUnit{\the\doihoffset},\LenToUnit{\the\doivoffset}){\AtPageLowerLeft{\ccbysa}}}},offset=7pt 42pt]{#1}%
+  \includepdf[pages=2-,noautoscale=true,pagecommand={},offset=7pt 42pt]{#1}%
 }
 
 \newcommand{\pdffilex}[1]{%
@@ -258,7 +271,7 @@ Dresden im November 2020
 {Erkennung mobiler Schadsoftware mit maschinellen Lernverfahren}
 {Arp, Daniel}
 {Erkennung mobiler Schadsoftware mit maschinellen Lernverfahren}
-\pdffile{pdfs/Arp-Daniel.pdf}
+\pdffilecc{pdfs/Arp-Daniel.pdf}
 
 \sheader 
 {Arbeitsgewohnheiten und Expertise von Softwareentwicklern}
@@ -270,13 +283,13 @@ Dresden im November 2020
 {Parallele Parametrisierte Algorithmen}
 {Bannach, Max}
 {Parallele Parametrisierte Algorithmen}
-\pdffile{pdfs/Bannach-Max.pdf}
+\pdffilecc{pdfs/Bannach-Max.pdf}
 
 \sheader 
 {Hierarchisches Planen durch Propositionale Logik}
 {Behnke, Gregor}
 {Hierarchisches Planen durch Propositionale Logik}
-\pdffile{pdfs/Behnke-Gregor.pdf}
+\pdffilecc{pdfs/Behnke-Gregor.pdf}
 
 \sheader 
 {Erweiterte Visuelle Benutzerschnittstellen für Big-Data-Analysen}
@@ -288,48 +301,48 @@ Dresden im November 2020
 {Personenwiedererkennung mittels maschineller Lernverfahren}
 {Eisenbach, Markus}
 {Personenwiedererkennung mittels maschineller Lernverfahren}
-\pdffile{pdfs/Eisenbach-Markus.pdf}
+\pdffilecc{pdfs/Eisenbach-Markus.pdf}
 
 \sheader 
 {Auslesekarte zur schnellen Verarbeitung von Detektordaten}
 {Engel, Heiko}
 {Auslesekarte zur schnellen Verarbeitung von Detektordaten}
-\pdffile{pdfs/Engel-Heiko.pdf}
+\pdffilecc{pdfs/Engel-Heiko.pdf}
 
 \sheader 
 {Widening mit Hashbasierter Partitionierung des Hypothesenraums}
 {Fillbrunn, Alexander}
 {Widening mit Hashbasierter Partitionierung des Hypothesenraums}
-\pdffile{pdfs/Fillbrunn-Alexander.pdf}
+\pdffilecc{pdfs/Fillbrunn-Alexander.pdf}
 
 \sheader 
 {Automatisierte Analyse virtueller Prototypen auf der ESL}
 {Goli, Mehran}
 {Automatisierte Analyse virtueller Prototypen auf der ESL}
-\pdffile{pdfs/Goli-Mehran.pdf}
+\pdffilecc{pdfs/Goli-Mehran.pdf}
 
 \sheader 
 {Algorithmen für graphbasierte dynamische Probleme}
 {Goranci, Gramoz}
 {Algorithmen für graphbasierte dynamische Probleme}
-\pdffile{pdfs/Goranci-Gramoz.pdf}
+\pdffilecc{pdfs/Goranci-Gramoz.pdf}
 
 \sheader 
 {Variationsnetzwerke f{\"u}r die medizinische Bildrekonstruktion}
 {Hammernik, Kerstin}
 {Variationsnetzwerke f{\"u}r die medizinische Bildrekonstruktion}
-\pdffile{pdfs/Hammernik-Kerstin.pdf}
+\pdffilecc{pdfs/Hammernik-Kerstin.pdf}
 
 \sheader 
 {Intelligentes, spielorientiertes Crowdsourcing f{\"u}r Audioverarbeitung}
 {Hantke, Simone}
 {Intelligentes, spielorientiertes Crowdsourcing f{\"u}r Audioverarbeitung}
-\pdffile{pdfs/Hantke-Simone.pdf}
+\pdffilecc{pdfs/Hantke-Simone.pdf}
 
 \sheader 
-{Erweiterte Kalk{\"u}le schw{\"a}chster Vorbedingungen f{\"u}r probabilistische Programme}
+{Erweiterte Verifikationskalk{\"u}le für Probabilistische Programme}
 {Kaminski, Benjamin}
-{Erweiterte Kalk{\"u}le schw{\"a}chster Vorbedingungen f{\"u}r probabilistische Programme}
+{Erweiterte Verifikationskalk{\"u}le für Probabilistische Programme}
 \pdffile{pdfs/Kaminski-Benjamin.pdf}
 
 
@@ -337,7 +350,7 @@ Dresden im November 2020
 {Verbesserte Kommunikationskomplexit{\"a}t in der Kryptographie}
 {Kohl, Lisa}
 {Verbesserte Kommunikationskomplexit{\"a}t in der Kryptographie}
-\pdffile{pdfs/Kohl-Lisa.pdf}
+\pdffilecc{pdfs/Kohl-Lisa.pdf}
 
 \sheader 
 {Kryptographische Uhren und Anwendungen}
@@ -349,60 +362,60 @@ Dresden im November 2020
 {Visuelle Risikoanalyse und Therapieplanung zerebraler Aneurysmen}
 {Meuschke, Monique}
 {Visuelle Risikoanalyse und Therapieplanung zerebraler Aneurysmen}
-\pdffile{pdfs/Meuschke-Monique.pdf}
+\pdffilecc{pdfs/Meuschke-Monique.pdf}
 
 \sheader 
 {Lernen mit Graphen: Kern- und neuronale Methoden}
 {Morris, Christopher}
 {Lernen mit Graphen: Kern- und neuronale Methoden}
-\pdffile{pdfs/Morris-Christopher.pdf}
+\pdffilecc{pdfs/Morris-Christopher.pdf}
 
 \sheader 
 {Around-Body Interaction}
-{M{\"u}ller, Florian}
+{Müller, Florian}
 {Around-Body Interaction}
-\pdffile{pdfs/Mueller-Florian.pdf}
+\pdffilecc{pdfs/Mueller-Florian.pdf}
 
 \sheader 
 {Schlussfolgern in Defeasible Beschreibungslogiken}
 {Pensel, Maximilian}
 {Schlussfolgern in Defeasible Beschreibungslogiken}
-\pdffile{pdfs/Pensel-Maximilian.pdf}
+\pdffilecc{pdfs/Pensel-Maximilian.pdf}
 
 \sheader 
 {Synchronisierte Pushdown Systeme für Datenfluss-Analysen}
 {Sp{\"a}th, Johannes}
 {Synchronisierte Pushdown Systeme für Datenfluss-Analysen}
-\pdffile{pdfs/Spaeth-Johannes.pdf}
+\pdffilecc{pdfs/Spaeth-Johannes.pdf}
 
 \sheader 
 {Neue Graphen-Algorithmen mittels polyedrischer Methoden}
 {Tarnawski, Jakub}
 {Neue Graphen-Algorithmen mittels polyedrischer Methoden}
-\pdffile{pdfs/Tarnawski-Jakub.pdf}
+\pdffilecc{pdfs/Tarnawski-Jakub.pdf}
 
 \sheader 
 {Methoden zum Monitoring des zirkadianen Rhythmus im Alltag}
 {Wahl, Florian}
 {Methoden zum Monitoring des zirkadianen Rhythmus im Alltag}
-\pdffile{pdfs/Wahl-Florian.pdf}
+\pdffilecc{pdfs/Wahl-Florian.pdf}
 
 \sheader 
 {Skalierbare Push-basierte Echtzeitanfragen für Pull-basierte DBs}
 {Wingerath, Wolfram}
 {Skalierbare Push-basierte Echtzeitanfragen für Pull-basierte DBs}
-\pdffile{pdfs/Wingerath-Wolfram.pdf}
+\pdffilecc{pdfs/Wingerath-Wolfram.pdf}
 
 \sheader 
 {L{\"o}sbarkeit von Consensus unter Nachrichtengegnern}
 {Winkler, Kyrill}
 {L{\"o}sbarkeit von Consensus unter Nachrichtengegnern}
-\pdffile{pdfs/Winkler-Kyrill.pdf}
+\pdffilecc{pdfs/Winkler-Kyrill.pdf}
 
 \sheader 
 {Entwurfsautomatisierung f{\"u}r Quantencomputer}
 {Zulehner, Alwin}
 {Entwurfsautomatisierung f{\"u}r Quantencomputer}
-\pdffile{pdfs/Zulehner-Alwin.pdf}
+\pdffilecc{pdfs/Zulehner-Alwin.pdf}
 
 \end{document}
